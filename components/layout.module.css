@@ -2,6 +2,7 @@
     max-width: 36rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
+    box-shadow: 0 2px 4px 0 rgba(194, 190, 190, 0.2), 0 4px 8px 0 rgba(163, 161, 161, 0.19);
 }
 
 .header {
