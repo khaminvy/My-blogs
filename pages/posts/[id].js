@@ -1,5 +1,6 @@
 import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
+import Head from 'next/head';
 
 
 export async function getStaticProps({ params }) {
@@ -16,6 +17,10 @@ export async function getStaticProps({ params }) {
 export default function Post({ postData }) {
     return (
       <Layout>
+        {/* Add the head tag */}
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
         {postData.title}
         <br />
         {postData.id}
